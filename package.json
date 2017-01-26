@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository":"https://github.com/patrickgao0922/igloo-activity-monitor.git",
+  "repository": "https://github.com/patrickgao0922/igloo-activity-monitor.git",
   "author": "Patrick Gao <patrickgao0922@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-es2015-node6": "^0.4.0"
+  }
 }
