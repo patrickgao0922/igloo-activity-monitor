@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository":"https://github.com/patrickgao0922/igloo-activity-monitor.git",
   "author": "Patrick Gao <patrickgao0922@gmail.com>",
   "license": "ISC"
 }
