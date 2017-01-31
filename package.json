@@ -4,11 +4,29 @@
   "description": "This is a node.js project which is used to monitor activities of users using mobile applciations controlling their devices.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
+    "build": "babel src -s -D -d dist --presets es2015,stage-0",
+    "start": "NODE_ENV=production pm2 start dist",
+    "prestart": "npm run -s build",
+    "lint": "eslint src"
   },
   "repository": "https://github.com/patrickgao0922/igloo-activity-monitor.git",
   "author": "Patrick Gao <patrickgao0922@gmail.com>",
   "license": "ISC",
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 7,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 1
+    }
+  },
   "dependencies": {
     "babel-cli": "^6.22.2",
     "babel-preset-es2015-node6": "^0.4.0",
