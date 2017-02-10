@@ -2,7 +2,7 @@
   "name": "igloo-activity-monitor",
   "version": "1.0.0",
   "description": "This is a node.js project which is used to monitor activities of users using mobile applciations controlling their devices.",
-  "main": "index.js",
+  "main": "dist",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "NODE_ENV=development nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
